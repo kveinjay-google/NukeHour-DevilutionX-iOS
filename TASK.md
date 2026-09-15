@@ -10,10 +10,12 @@ Publish the audited iOS 1.6.0 source snapshot and immutable source tag.
 
 - Project version-control documentation established on 2026-09-15.
 - Desktop source snapshot copied without modifying the original.
+- Public-release audit passed with no signing material or game-data archives.
+- Public repository and immutable source tag prepared for iOS 1.6.0.
 
 ## Active
 
-- Complete the public-release audit, create the public repository, and publish tag `ios-v1.6.0`.
+- Maintain the published source-to-artifact mapping for subsequent versions.
 
 ## Next
 
@@ -26,4 +28,4 @@ Publish the audited iOS 1.6.0 source snapshot and immutable source tag.
 ## Verification evidence
 
 - Standard documentation generated on 2026-09-15.
-- `bash scripts/audit-public-release.sh` is the publication gate.
+- `bash scripts/audit-public-release.sh` passed on 2026-09-15 and remains the publication gate.
