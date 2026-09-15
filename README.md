@@ -1,30 +1,37 @@
-# nukehour-devilutionx-ios
+# Nuke Hour for iOS · DevilutionX Edition
 
-Project documentation template added on 2026-09-15
+**Modified by Nuke Hour.** Official website: https://nukehour.com
 
-## Purpose
+This repository publishes the source snapshot for Nuke Hour 1.6.0 on iOS, a modified version of [DevilutionX](https://github.com/diasurgical/DevilutionX). It is not the official DevilutionX project and is not provided, supported, or endorsed by Diasurgical or Blizzard Entertainment.
 
-State the problem this project solves and the users it serves.
+The corresponding IPA is unsigned and contains no Diablo or Hellfire game data. A user must re-sign it with an Apple account they control and provide a legally obtained `DIABDAT.MPQ`, or use the shareware `spawn.mpq`. The included `fonts.mpq` is the separate DevilutionX international font asset and is not commercial game data.
 
-## Status
+## Source and artifact mapping
 
-- Initial repository structure is in place.
+- Release: Nuke Hour iOS 1.6.0
+- Display name: `Nuke Hour`
+- Bundle identifier in the unsigned artifact: `com.nukehour.ios`
+- Immutable source tag: `ios-v1.6.0`
+- Artifact record and checksum: [ARTIFACTS.md](ARTIFACTS.md)
+- iOS build instructions: [docs/ios_build.md](docs/ios_build.md)
 
-## Setup
+## License and attribution
 
-Document project prerequisites and installation steps here as the runtime is selected.
+This modified source remains under the DevilutionX Sustainable Use License. Read [LICENSE.md](LICENSE.md) and the required modification notice in [NOTICE.md](NOTICE.md) before using or redistributing it. Distribution must remain free of charge and within the license's non-commercial limitations.
 
-## Run
+## Public release audit
 
-Document the primary local run command here when the runtime entry point is added.
+Run:
 
-## Verify
+```sh
+bash scripts/audit-public-release.sh
+```
 
-Document the commands that verify the project here as checks are introduced.
+The audit rejects signing files, provisioning profiles, known game-data archives, credential-like values, an incorrect iOS bundle identifier, or incomplete artifact documentation.
 
-## Documentation
+## Project documentation
 
 - [Architecture](ARCHITECTURE.md)
 - [Task status](TASK.md)
 - [Changelog](CHANGELOG.md)
-- [Project documentation](docs/README.md)
+- [Documentation index](docs/README.md)

@@ -21,6 +21,33 @@
 /credentials.json
 /secrets.json
 
+# Signing and provisioning material at any depth
+*.pem
+*.key
+*.cer
+*.crt
+*.p12
+*.pfx
+*.mobileprovision
+
+# Game data and distributable packages are published outside Git
+*.mpq
+*.MPQ
+*.ipa
+
+# CMake and platform build output
+/build-*/
+/build_*/
+/dist/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.obj
+*.pdb
+
 # Logs and temporary files
 *.log
 *.tmp
